@@ -1,0 +1,127 @@
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI',sans-serif; }
+
+body {
+  background: linear-gradient(135deg, #ffe0ec, #fff5f8);
+  min-height: 100vh;
+  padding-bottom: 40px;
+}
+
+header {
+  background: linear-gradient(135deg, #ff6b9d, #ffa5c4);
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(255,107,157,0.3);
+}
+
+.logo img {
+  width: 80px; height: 80px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 5px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.logo h1 {
+  color: #fff;
+  margin-top: 8px;
+  font-size: 22px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+main { padding: 16px; max-width: 500px; margin: 0 auto; }
+
+.card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 16px;
+  margin-bottom: 14px;
+  box-shadow: 0 4px 12px rgba(255,107,157,0.15);
+}
+
+.card h2 {
+  color: #ff6b9d;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.games { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+
+.game-btn {
+  background: #fff5f8;
+  border: 2px solid #ffd6e5;
+  padding: 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.2s;
+}
+
+.game-btn.active {
+  background: #ff6b9d;
+  color: #fff;
+  border-color: #ff6b9d;
+  transform: scale(1.03);
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ffd6e5;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+input:focus, select:focus { border-color: #ff6b9d; }
+
+.nominals { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+
+.nominal {
+  background: #fff5f8;
+  border: 2px solid #ffd6e5;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 13px;
+  transition: 0.2s;
+}
+
+.nominal.active {
+  background: #ff6b9d;
+  color: #fff;
+  border-color: #ff6b9d;
+}
+
+.nominal .price {
+  display: block;
+  font-weight: bold;
+  color: #ff6b9d;
+  margin-top: 4px;
+}
+
+.nominal.active .price { color: #fff; }
+
+.checkout {
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(135deg, #ff6b9d, #ff8fb3);
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(255,107,157,0.4);
+  transition: 0.2s;
+}
+
+.checkout:active { transform: scale(0.97); }
+
+footer {
+  text-align: center;
+  color: #ff6b9d;
+  font-size: 12px;
+  margin-top: 20px;
+}
