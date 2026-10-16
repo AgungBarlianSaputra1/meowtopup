@@ -1,0 +1,13 @@
+{
+  "name": "Meow Top Up",
+  "short_name": "MeowTopUp",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffe0ec",
+  "theme_color": "#ff6b9d",
+  "orientation": "portrait",
+  "icons": [
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "192x192", "type": "image/png" }
+  ]
+}
